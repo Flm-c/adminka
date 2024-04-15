@@ -13,6 +13,10 @@ app.use(
   gamesRouter
 );
 
+app.get('/games/:id', (req,res)=>{
+    //кодд, который обрабатывает игру с :id == 1-8
+})
+
 app.listen(PORT, () => {
   console.log(`Сервер запущен на ${PORT} порту`);
 });
